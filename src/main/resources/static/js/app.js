@@ -31,6 +31,7 @@ var app = (function(){
                 </tr>`
             );
         })
+
         $("#Points").text("Total User Points : "+sumaPuntos);
 
     }

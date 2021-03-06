@@ -1,9 +1,9 @@
 var apimock = (function () {
   var mockdata = [];
 
-  mockdata["JhonConnor"] = [
+  mockdata["Santiago"] = [
     {
-      author: "JhonConnor",
+      author: "Santiago",
       name: "house",
       points: [
         {
@@ -41,7 +41,7 @@ var apimock = (function () {
       ],
     },
     {
-      author: "JhonConnor",
+      author: "Santiago",
       name: "dog",
       points: [
         {
@@ -79,7 +79,7 @@ var apimock = (function () {
       ],
     },
     {
-      author: "JhonConnor",
+      author: "Santiago",
       name: "bike",
       points: [
         {
@@ -89,13 +89,14 @@ var apimock = (function () {
         {
           x: 40,
           y: 45,
+
         },
       ],
     },
   ];
-  mockdata["LexLuthor"] = [
+  mockdata["Jose"] = [
     {
-      author: "LexLuthor",
+      author: "Jose",
       name: "kryptonite",
       points: [
         {
@@ -109,7 +110,7 @@ var apimock = (function () {
       ],
     },
     {
-      author: "LexLuthor",
+      author: "Jose",
       name: "pool",
       points: [
         {
