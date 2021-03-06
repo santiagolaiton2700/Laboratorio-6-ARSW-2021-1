@@ -6,15 +6,14 @@ var app = (function(){
     function setAuthor(){
         nombre=$("#author").val()
     }
-
     function getBlueprintsAuthor(){
         apimock.getBlueprintsByAuthor(nombre,blueprintsByAuthor)
     }
-
     function blueprintsByAuthor(bluePrint){
         var sumaPuntos=0;
         data = bluePrint.map((info) => {
-            bluePrint=info.points;                 
+            bluePrint=info.points;  
+			
             return {       
                 listpoint: info.points,              
                 name: info.name,                     
