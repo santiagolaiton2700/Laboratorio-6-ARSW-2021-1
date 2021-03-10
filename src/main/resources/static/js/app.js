@@ -1,13 +1,24 @@
+
 var app = (function(){
-    var nombre=""
-    var bluePrint=[]
-    var data=""
-    
+
+    var apiSelector;
+    var nombre="";
+    var bluePrint=[];
+    var data="";
+
+
+
     function setAuthor(){
+        //change from mock to client
+        apiSelector=apiclient;
+
         nombre=$("#author").val()
+        $(".userName").text(nombre+"'s Blueprints");
+        
     }
     function getBlueprintsAuthor(){
-        apimock.getBlueprintsByAuthor(nombre,blueprintsByAuthor)
+
+        apiSelector.getBlueprintsByAuthor(nombre,blueprintsByAuthor);
     }
     function blueprintsByAuthor(bluePrint){
         var sumaPuntos=0;
@@ -33,10 +44,13 @@ var app = (function(){
 
         $("#Points").text("Total User Points : "+sumaPuntos);
 
+
     }
    
     function getPointBluePrint(blueprintName){
-        apimock.getBlueprintsByNameAndAuthor(nombre,blueprintName,pintar);
+        $(".printName").text("Current Blueprint: "+blueprintName);
+        apiSelector.getBlueprintsByNameAndAuthor(nombre,blueprintName,pintar);
+
     }
     function pintar(bluePrint){
         var c = document.getElementById("canvas");
